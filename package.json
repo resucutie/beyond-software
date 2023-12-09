@@ -1,0 +1,25 @@
+{
+    "name": "goodietools",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@types/markdown-it": "^13.0.7",
+        "typescript": "^5.2.2",
+        "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "@types/markdown-it-emoji": "^2.0.4",
+        "@types/node": "^20.10.4",
+        "markdown-it": "^14.0.0",
+        "markdown-it-anchor": "^8.6.7",
+        "markdown-it-custom-block": "^0.1.2",
+        "markdown-it-emoji": "^3.0.0",
+        "markdown-it-regexp": "^0.4.0"
+    }
+}

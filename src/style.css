@@ -1,0 +1,225 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --accent: #FF8702
+}
+
+a {
+    font-weight: 500;
+    color: var(--accent);
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    vertical-align: middle;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+#app {
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#drawer {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    color: var(--accent);
+    z-index: 1000;
+    cursor: pointer;
+}
+#drawer svg {
+    fill: currentColor;
+}
+
+#sidebar {
+    padding: 16px;
+    background: #0004;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: margin-left 200ms;
+    position: relative;
+}
+#sidebar.hidden {
+    margin-left: calc(-300px - 32px);
+}
+
+.sidebar-name {
+    display: block;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.toc-content {
+    color: #fffd;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: inherit;
+    transition: color 100ms;
+}
+
+.toc-content.h1 {
+    font-size: 18px;
+}
+
+.toc-content.h2{
+    color: #fff8;
+    padding: 2px 12px;
+    margin-left: 16px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.toc-content:hover {
+    color: var(--accent);
+}
+
+#markdown {
+    padding: 32px 64px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+#markdown a:hover {
+    color: #e07902;
+}
+
+.custom-emoji svg {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+#greetings {
+    width: 100%;
+    height: calc(100% + 32px);
+    margin-bottom: 64px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    position: relative;
+}
+
+.greetings-icon {
+    width: 30%;
+    height: 30%;
+    animation: greetings-blobfox 5s infinite linear;
+
+}
+
+.greetings-name {
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-size: bolder;
+}
+.greetings-description{
+    text-align: center;
+}
+
+.greetings-scroll {
+    position: absolute;
+    bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #fff5;
+}
+
+.greetings-scroll svg{
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+    animation: greetings-arrow 2.5s infinite;
+}
+
+@keyframes greetings-arrow {
+    0% {
+        transform: translateY(0);
+    } 50% {
+        transform: translateY(-16px);
+    } 100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes greetings-blobfox {
+    0% {
+        transform: translate(0, 12px) rotate(2deg);
+    } 33% {
+        transform: translate(-25px, -22px) rotate(-4deg);
+    } 66% {
+        transform: translate(18px, -31px) rotate(10deg);
+    } 100% {
+        transform: translate(0, 12px) rotate(2deg);
+    }
+}
+
+@media (orientation: portrait) {
+    #sidebar {
+        width: calc(100vw - 32px);
+        min-width: calc(100vw - 32px);
+        max-width: calc(100vw - 32px);
+    }
+    #sidebar.hidden{
+        margin-left: calc(-100vw);
+    }
+    .sidebar-name{
+        margin-left: 0;
+    }
+    #markdown {
+        width: calc(100vw - 32px*2);
+        min-width: calc(100vw - 32px*2);
+        max-width: calc(100vw - 32px*2);
+        padding: 32px;
+    }
+}
