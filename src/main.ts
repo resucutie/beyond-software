@@ -16,7 +16,7 @@ const greetingsHtml = `
     <img src="${blobfoxbox}" class="greetings-icon" alt="blobfoxbox" />
     <span class="greetings-description">
         A collective list of reliable and trustworthy software and resources for a better user expierence.<br>
-        No influence by sponsors, advertisements or finnancial gain.
+        Not influenced by sponsors, advertisements or finnancial gain.
     </span>
 
     <div class="greetings-scroll">
