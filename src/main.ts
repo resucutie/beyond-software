@@ -14,7 +14,10 @@ const greetingsHtml = `
 <div id="greetings">
     <span class="greetings-name">Beyond Software</span>
     <img src="${blobfoxbox}" class="greetings-icon" alt="blobfoxbox" />
-    <span class="greetings-description">A collective list of reliable and trustworthy software maintained by the community.<br>No influence by sponsors, advertisements or finnancial gain.</span>
+    <span class="greetings-description">
+        A collective list of reliable and trustworthy software and resources for a better user expierence.<br>
+        No influence by sponsors, advertisements or finnancial gain.
+    </span>
 
     <div class="greetings-scroll">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
@@ -52,7 +55,6 @@ document.getElementById('markdown')!.innerHTML = md.render(doc)
 
 // anchoring
 if(!(window.location.hash === "" || window.location.hash === "#")) location.href = window.location.hash
-else location.href = "#greetings"
 
 document.querySelector(".greetings-scroll")!.addEventListener("click", () => {
     if(! firstAnchorElement) return

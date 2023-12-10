@@ -5,6 +5,7 @@ import windows from "/icons/windows.svg?raw"
 import linux from "/icons/linux.svg?raw"
 import computer from "/icons/computer.svg?raw"
 import phone from "/icons/phone.svg?raw"
+import web from "/icons/web.svg?raw"
 
 function emoji(name: string) {return`<span class="custom-emoji">${name}</span>`}
 
@@ -16,4 +17,5 @@ export default {
     "c-linux": emoji(linux),
     "c-pc": emoji(computer),
     "c-mobile": emoji(phone),
+    "c-web": emoji(web),
 }

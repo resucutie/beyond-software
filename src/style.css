@@ -10,7 +10,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --accent: #FF8702
+    --accent: rgb(255, 136, 0)
 }
 
 a {
@@ -38,6 +38,13 @@ p {
 
 pre {
     overflow-x: auto;
+}
+
+code {
+    background: #0008;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 1px solid var(--accent);
 }
 
 #app {
@@ -131,8 +138,8 @@ pre {
 
 .custom-emoji svg {
     vertical-align: middle;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
