@@ -1,16 +1,21 @@
 @[greetings](e)
 
-# Android-specific applications
-Those are applications that are built with enhancing Android in mind. An android-only video player, for example, won't come here, but an application store would
+# Android-focused applications
+Those are applications that their functionality is directred related with Android. An android-only video player, for example, won't come here, but an application store would
 
 ## Application installation
-
 [F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
 [Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
 
 [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows a more private navigation.
 
-[APKMirror](https://apkmirror.com) :c-web: - Website to download APKs
+[APKMirror](https://apkmirror.com) :c-web: - Website to download dumped APKs
+
+## System customization
+[Repainter](https://repainter.app/) :c-android: :c-freemium: - Application to apply custom Monet color schemes
+
+[Nova Launcher](https://novalauncher.com/) :c-android: :C-freemium: - A well-known launcher
+[Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a different experience in contrast to the grid-based launchers
 
 # Modding
 ## Any
@@ -34,9 +39,11 @@ Those are applications that are built with enhancing Android in mind. An android
 [Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
 
 
-# Contributing information
+# Contributing to this list
+This section includes information on how you can contribute to this list
+
 ## Guidelines
-- All entries should contain programs where the user has total control over it and is virus-free
+- All entries should contain programs where the user has total control over it and are virus-free. Preferably Free and Open Source applications
 - Each entry should follow the following format:
     - Name of the produt as a link (`[Product](link)`)
     - Row of [custom icons](#custom-icons) showing the avaiable platforms in the following order:
@@ -70,3 +77,6 @@ Thanks for [FontAwesome](https://fontawesome.com/) and [Material Icons](https://
 :c-windows: `:c-windows:` - Runs on Windows  
 :c-macos: `:c-macos:` - Runs on MacOS  
 :c-linux: `:c-linux:` - Runs on Linux  
+:c-ads: `:c-ads:` - Contains ads  
+:c-freemium: `:c-freemium:` - Is a program that contains a Freemium payment model  
+:c-paid: `:c-paid:` - Is a paid program  
