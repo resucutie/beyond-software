@@ -1,5 +1,17 @@
 @[greetings](e)
 
+# Android-specific applications
+Those are applications that are built with enhancing Android in mind. An android-only video player, for example, won't come here, but an application software would
+
+## Application installation
+
+[F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
+[Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
+
+[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows annoyminity to navigate it 
+
+[APKMirror](https://apkmirror.com) :c-web: - Website to download applications as APKs
+
 # Modding
 ## Any
 
@@ -15,7 +27,7 @@
 [Vesktop](https://github.com/Vencord/Vesktop) :c-pc: - Cross-platform desktop app that includes Vencord by default. Offers screen sharing for Wayland as well
 
 [Vendetta](https://github.com/vendetta-mod/Vendetta) :c-mobile: - Multi-platform Discord mobile client mod  
-[Enmity](https://enmity.app/) :c-ios: - iPhone exclusive Discord client mod
+[Enmity](https://enmity.app/) :c-ios: - iPhone exclusive Discord client mod. Requires Alt Store
 
 ## Telegram
 
@@ -23,7 +35,8 @@
 
 
 # Contributing information
-## Standards
+## Guidelines
+- All entries should contain programs where the user has total control over it and is virus-free
 - Each entry should follow the following format:
     - Name of the produt as a link (`[Product](link)`)
     - Row of [custom icons](#custom-icons) showing the avaiable platforms in the following order:
@@ -32,22 +45,28 @@
             - If it is avaiable in all platforms: :c-pc:
         - Mobile :c-android: :c-ios:
             - If it is avaiable in all platforms: :c-mobile:
+- If there's an alternative to a program, its entry should be put right next to the other with a breaking line, and not a new paragraph
+- There are cases where merging can happen, but this should be avoided, and only done when there's no difference between both programs in terms of popularity, features and UX-wise
 
 ### Examples
 Single entry:  
 [Kaiteki](https://kaiteki.app) :c-web: :c-windows: :c-linux: :c-android: - A comfy social networking service for multiple platforms
 
 Entries with alternatives:  
-[Text-Grab](https://github.com/TheJoeFin/Text-Grab) :c-windows: - Minimal OCR Text extractor utility for Windows 10/11  
-[Frog](https://getfrog.app/) :c-linux: - OCR Text extractor utility built with GTK 4 and Libadwaita
+[Vendetta](https://github.com/vendetta-mod/Vendetta) :c-mobile: - Multi-platform Discord mobile client mod  
+[Enmity](https://enmity.app/) :c-ios: - iPhone exclusive Discord client mod
+
+Merged entries:  
+[Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
+
 ## Custom icons
 Thanks for [FontAwesome](https://fontawesome.com/) and [Material Icons](https://fonts.google.com/icons) for providing the icons
 
-:c-pc: `:c-pc:`  
-:c-mobile: `:c-mobile`  
-:c-web: `:c-web`  
-:c-android: `:c-android:`  
-:c-ios: `:c-ios:`  
-:c-windows: `:c-windows:`  
-:c-macos: `:c-macos:`  
-:c-linux: `:c-linux:`  
+:c-pc: `:c-pc:` - Runs on all PC platforms  
+:c-mobile: `:c-mobile` - Runs on all mobile platforms  
+:c-web: `:c-web` - Runs on a website  
+:c-android: `:c-android:` - Runs on Android  
+:c-ios: `:c-ios:` - Runs on iOS  
+:c-windows: `:c-windows:` - Runs on Windows  
+:c-macos: `:c-macos:` - Runs on MacOS  
+:c-linux: `:c-linux:` - Runs on Linux  
