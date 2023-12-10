@@ -3,9 +3,6 @@ import process from "process";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-    server: {
-        open: "index.html",
-    },
     root: "src",
     publicDir: "../public",
     assetsInclude: ['**/*.md'],
