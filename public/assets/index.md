@@ -1,16 +1,16 @@
 @[greetings](e)
 
 # Android-specific applications
-Those are applications that are built with enhancing Android in mind. An android-only video player, for example, won't come here, but an application software would
+Those are applications that are built with enhancing Android in mind. An android-only video player, for example, won't come here, but an application store would
 
 ## Application installation
 
 [F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
 [Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
 
-[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows annoyminity to navigate it 
+[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows a more private navigation.
 
-[APKMirror](https://apkmirror.com) :c-web: - Website to download applications as APKs
+[APKMirror](https://apkmirror.com) :c-web: - Website to download APKs
 
 # Modding
 ## Any
