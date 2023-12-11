@@ -20,6 +20,7 @@
         "markdown-it-anchor": "^8.6.7",
         "markdown-it-custom-block": "^0.1.2",
         "markdown-it-emoji": "^3.0.0",
-        "markdown-it-regexp": "^0.4.0"
+        "markdown-it-regexp": "^0.4.0",
+        "markdown-it-small": "^1.0.0"
     }
 }

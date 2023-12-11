@@ -1,30 +1,14 @@
 @[greetings](e)
 
-# Android-focused applications
-Those are applications that their functionality is directred related with Android. An android-only video player, for example, won't come here, but an application store would
-
-## Application installation
-[F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
-[Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
-
-[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows a more private navigation.
-
-[APKMirror](https://apkmirror.com) :c-web: - Website to download dumped APKs
-
-## System customization
-[Repainter](https://repainter.app/) :c-android: :c-freemium: - Application to apply custom Monet color schemes
-
-[Nova Launcher](https://novalauncher.com/) :c-android: :C-freemium: - A well-known launcher
-[Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a different experience in contrast to the grid-based launchers
-
 # Modding
-## Any
+## General
+[ReVanced](https://revanced.app) :c-android: - Application that can apply various patches to numerous android apps including YouTube and TikTok. Spiritual successor to Vanced  
+--Note: It requires the need of a microG client for YouTube and YouTube music if your device does not have root access. At the moment, the most compatible microG manager with ReVanced, according to the community, is [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG)--
 
-[ReVanced](https://revanced.app) :c-android: - Application that can apply various patches to numerous apps including YouTube and TikTok
 
 ## Discord
-[Vencord](https://vencord.dev/) :c-pc: - A regex patch based Discord desktop client mod. Most plugins come built in  
-[BetterDiscord](https://betterdiscord.app/) :c-pc: - A well-known Discord desktop client mod. The most popular  
+[Vencord](https://vencord.dev/) :c-web: :c-pc: - A regex patch based Discord desktop client mod. Most plugins come built in  
+[BetterDiscord](https://betterdiscord.app/) :c-pc: - A well-known plugin-based Discord desktop client mod. The most popular option  
 [Replugged](https://replugged.dev/) :c-pc: - A Discord desktop client mod made with a way more robust API for plugins
 
 [OpenAsar](https://replugged.dev/) :c-pc: - Rewrite of Discord's desktop code to increase speed. *Note: Vencord's installer offers the option to install OpenAsar*
@@ -38,9 +22,99 @@ Those are applications that their functionality is directred related with Androi
 
 [Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
 
+## Spotify
+
+[Spicetify](https://spicetify.app/) :c-pc: - Multiplatform command-line tool to customize Spotify
+
+
+
+
+# Privacy and Security
+## Ad blockers
+[uBlock Origin](https://github.com/gorhill/uBlock) :c-web: - Open source community made adblocker  
+[PowerTunnel](https://github.com/krlvm/PowerTunnel) :c-pc: :c-android: - Desktop and Android extensible proxy server. Includes adblocking and anti-censorship tool
+
+
+
+
+# Productivity
+## Image manipulation
+[Krita](https://krita.org/) :c-pc: - Free and Open Source powerful drawing program  
+[GIMP](https://www.gimp.org/) :c-pc: - Open source image editing program
+
+## Video manipulation
+[Kdenlive](https://kdenlive.org/) :c-pc: - Open source video editing tool made by the KDE team.  
+[Shotcut](https://shotcut.org/) :c-pc: - Open source advanced video editing tool.
+
+## Organization
+[Logseq](https://logseq.com/) :c-pc: :c-android: - Open source replacement for Obsidian
+
+[Tasks.org](https://tasks.org/) :c-android: - Powerful tasks app
+
+[draw.io](https://www.drawio.com/) :c-web: :c-pc: - Diagram app creating tool
+
+
+
+# System-focused resources
+Those are applications and resources that their functionality is directred related with a system. An android-only video player, for example, won't come here, but an application store would
+
+## Android
+
+### Application installation
+[F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
+[Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
+
+[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows a more private navigation.
+
+[APKMirror](https://apkmirror.com) :c-web: - Website to download dumped APKs
+
+### Customization
+[Repainter](https://repainter.app/) :c-android: :c-freemium: - Application to apply custom Monet color schemes
+
+[Nova Launcher](https://novalauncher.com/) :c-android: :c-freemium: - A well-known grid based launcher  
+[Lawnchair](https://lawnchair.app/) :c-android: - Free and open source grid based launcher
+[Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a more search-focused widget based experience
+
+### Enhancements
+[Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) :c-android: - Controls system rotation
+
+## iOS
+### Application stores
+[AltStore](https://altstore.io/) :c-windows: :c-macos: :c-ios: - Application store for sideloading apps  
+[Sideloadey](https://sideloadly.io/) :c-windows: :c-macos: :c-ios: :c-appletv: - Application store for sideloading apps
+
+### Jailbreak
+[iOS Jailbreak CFW guide](https://ios.cfw.guide/) - A complete iOS modding guide, from stock to jailbroken.
+
+
+
+# Utilities
+## File management
+[MiXplorer](https://mixplorer.com/) :c-android: - Poweful file manager for Android
+
+[SD Maid SE](https://github.com/d4rken-org/sdmaid-se) :c-android: - System cleaner for Android phones
+
+## Media management
+### Content downloader
+[Cobalt](https://cobalt.tools) :c-web: - Online video and audio downloader without ads or annoying features. Supports multiple services, including YouTube and TikTok.  
+[Parabolic](https://nickvision.org/parabolic.html) :c-windows: :c-linux: - Desktop application for downloading YouTube videos
+
+### File converter
+[FFmpeg](https://ffmpeg.org/) :c-pc: :c-cli: - Powerful CLI utility for video manipulation
+- TODO: Add FFmpeg frontends
+
+## Mobile and Desktop integration
+[KDE Connect](https://kdeconnect.kde.org/) :c-mobile: :c-pc: - Feature rich integration app between phones and computers.
+
+
 
 # Contributing to this list
 This section includes information on how you can contribute to this list
+
+## Sections in need for contributions
+[System-focused resources -> iOS](#ios) - Needs more items and applications  
+[Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends
+[Utilities -> Media Management -> File converter](#ad-blockers) - Needs FFmpeg frontends
 
 ## Guidelines
 - All entries should contain programs where the user has total control over it and are virus-free. Preferably Free and Open Source applications
@@ -54,6 +128,7 @@ This section includes information on how you can contribute to this list
             - If it is avaiable in all platforms: :c-mobile:
 - If there's an alternative to a program, its entry should be put right next to the other with a breaking line, and not a new paragraph
 - There are cases where merging can happen, but this should be avoided, and only done when there's no difference between both programs in terms of popularity, features and UX-wise
+- The sections should be sorted in alphabetic order. But that's not required for entries
 
 ### Examples
 Single entry:  
@@ -71,12 +146,16 @@ Thanks for [FontAwesome](https://fontawesome.com/) and [Material Icons](https://
 
 :c-pc: `:c-pc:` - Runs on all PC platforms  
 :c-mobile: `:c-mobile` - Runs on all mobile platforms  
-:c-web: `:c-web` - Runs on a website  
+:c-web: `:c-web` - Runs on all browsers  
 :c-android: `:c-android:` - Runs on Android  
 :c-ios: `:c-ios:` - Runs on iOS  
+:c-appletv: `:c-appletv` - Supports Apple TV  
 :c-windows: `:c-windows:` - Runs on Windows  
 :c-macos: `:c-macos:` - Runs on MacOS  
 :c-linux: `:c-linux:` - Runs on Linux  
+:c-cli: `:c-cli` - Application only avaiable in CLI form  
+:c-chrome: `:c-chrome:` - Runs on Chrome  
+:c-firefox: `:c-firefox:` - Runs on Firefox  
 :c-ads: `:c-ads:` - Contains ads  
 :c-freemium: `:c-freemium:` - Is a program that contains a Freemium payment model  
 :c-paid: `:c-paid:` - Is a paid program  

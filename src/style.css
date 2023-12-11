@@ -22,14 +22,32 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-size: 14px;
+    font-size: 16px;
 
     color: rgba(255, 255, 255, 0.87);
     background-color: #242424;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2{
+    margin: 16px 0;
+}
+h3, h4, h5, h6 {
     margin: 0;
+}
+small {
+    font-style: italic;
+}
+
+h1 {
+    margin-top: 4rem;
+    color: var(--accent);
+    border-bottom: solid 4px var(--accent);
+    font-size: 36px;
+}
+
+h2 {
+    border-bottom: solid 1px #fff;
+    /* margin-bottom: 8px; */
 }
 
 p {
@@ -45,6 +63,10 @@ code {
     padding: 2px 4px;
     border-radius: 4px;
     border: 1px solid var(--accent);
+}
+
+ul{
+    margin-top: 0;
 }
 
 #app {
@@ -109,7 +131,7 @@ code {
 }
 
 .toc-content.h1 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .toc-content.h2{
@@ -130,6 +152,7 @@ code {
     overflow-y: auto;
     overflow-x: hidden;
     flex: 1;
+    scroll-behavior: smooth;
 }
 
 #markdown a:hover {
@@ -181,6 +204,7 @@ code {
     gap: 8px;
     color: #fff5;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .greetings-scroll svg{

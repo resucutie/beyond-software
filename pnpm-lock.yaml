@@ -26,6 +26,9 @@ dependencies:
   markdown-it-regexp:
     specifier: ^0.4.0
     version: 0.4.0
+  markdown-it-small:
+    specifier: ^1.0.0
+    version: 1.0.0
 
 devDependencies:
   '@types/markdown-it':
@@ -439,6 +442,10 @@ packages:
 
   /markdown-it-regexp@0.4.0:
     resolution: {integrity: sha512-0XQmr46K/rMKnI93Y3CLXsHj4jIioRETTAiVnJnjrZCEkGaDOmUxTbZj/aZ17G5NlRcVpWBYjqpwSlQ9lj+Kxw==}
+    dev: false
+
+  /markdown-it-small@1.0.0:
+    resolution: {integrity: sha512-tL9yr4h/ZEjyMJsSicrQorlZhaqHgxSE8kNkMxRh2lUEjtijE4sz37w0nS7NzuRI4+lhQy0ZVlEbvs8ni47FWA==}
     dev: false
 
   /markdown-it@14.0.0:
