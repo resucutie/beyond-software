@@ -6,7 +6,7 @@ import * as mdEmojis from "markdown-it-emoji"
 // @ts-ignore sadly theres no types for this one
 import mdSmall from "markdown-it-small"
 import customIcons from "./custom-icons"
-import blobfoxbox from "/blobfoxbox.svg"
+import blobfoxbox from "/icon.svg"
 
 // const greetingsHtml = `
 // <div id="greetings">
