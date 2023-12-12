@@ -19,13 +19,13 @@
 [Enmity](https://enmity.app/) :c-ios: - iPhone exclusive Discord client mod. Requires Alt Store
 
 ## Telegram
-
 [Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
 
 ## Spotify
-
 [Spicetify](https://spicetify.app/) :c-pc: - Multiplatform command-line tool to customize Spotify
 
+## Notion
+[notion-enhancer](https://notion-enhancer.github.io/) :c-web: :c-pc: - Enhancer for Notion that includes a bunch of quality of life improvements.
 
 
 
@@ -142,8 +142,6 @@ Merged entries:
 [Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
 
 ## Custom icons
-Thanks for [FontAwesome](https://fontawesome.com/) and [Material Icons](https://fonts.google.com/icons) for providing the icons
-
 :c-pc: `:c-pc:` - Runs on all PC platforms  
 :c-mobile: `:c-mobile` - Runs on all mobile platforms  
 :c-web: `:c-web` - Runs on all browsers  
@@ -159,3 +157,8 @@ Thanks for [FontAwesome](https://fontawesome.com/) and [Material Icons](https://
 :c-ads: `:c-ads:` - Contains ads  
 :c-freemium: `:c-freemium:` - Is a program that contains a Freemium payment model  
 :c-paid: `:c-paid:` - Is a paid program  
+
+## Thanks
+Thanks to:
+- [FontAwesome](https://fontawesome.com/) and [Material Icons](https://fonts.google.com/icons) for providing the icons
+- 
