@@ -72,7 +72,7 @@ Those are applications and resources that their functionality is directred relat
 [Repainter](https://repainter.app/) :c-android: :c-freemium: - Application to apply custom Monet color schemes
 
 [Nova Launcher](https://novalauncher.com/) :c-android: :c-freemium: - A well-known grid based launcher  
-[Lawnchair](https://lawnchair.app/) :c-android: - Free and open source grid based launcher
+[Lawnchair](https://lawnchair.app/) :c-android: - Free and open source grid based launcher  
 [Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a more search-focused widget based experience
 
 ### Enhancements
