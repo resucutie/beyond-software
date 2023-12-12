@@ -6,7 +6,7 @@ import * as mdEmojis from "markdown-it-emoji"
 // @ts-ignore sadly theres no types for this one
 import mdSmall from "markdown-it-small"
 import customIcons from "./custom-icons"
-import blobfoxbox from "/icon.svg"
+import websiteIcon from "/icon.svg"
 
 // const greetingsHtml = `
 // <div id="greetings">
@@ -49,7 +49,7 @@ const md = markdownit()
         greetings: () => `
         <div id="greetings">
             <span class="greetings-name">Beyond Software</span>
-            <img src="${blobfoxbox}" class="greetings-icon" alt="blobfoxbox" />
+            <img src="${websiteIcon}" class="greetings-icon" alt="blobfoxbox" />
             <span class="greetings-description">
                 A collective list of reliable and trustworthy software and resources for a better user expierence.<br>
                 Not influenced by sponsors, advertisements or finnancial gain.
