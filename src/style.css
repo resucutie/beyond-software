@@ -212,6 +212,17 @@ blockquote > p {
     text-align: center;
 }
 
+.greetings-contribute img {
+    width: 20px;
+    height: 20px;
+}
+
+.greetings-contribute {
+    display: inline-flex;
+    align-items:center;
+    gap: 8px;
+}
+
 .greetings-scroll {
     position: absolute;
     bottom: 16px;

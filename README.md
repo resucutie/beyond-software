@@ -1,9 +1,10 @@
-<center>
-    <img src="public/icon.svg"/>
-    <h1>Beyond Software</h1>
+<p align="center"><img src="public/icon.svg"/></p>
+<h1 align="center">Beyond Software</h1>
+<p align="center">
     A collective list of reliable and trustworthy software and resources for a better user expierence.<br>
     Not influenced by sponsors, advertisements or finnancial gain.
-</center>
+</p>
+
 <br>
 
 # How to Contribute
