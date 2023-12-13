@@ -17,9 +17,6 @@ dependencies:
   markdown-it-anchor:
     specifier: ^8.6.7
     version: 8.6.7(@types/markdown-it@13.0.7)(markdown-it@14.0.0)
-  markdown-it-custom-block:
-    specifier: ^0.1.2
-    version: 0.1.2
   markdown-it-emoji:
     specifier: ^3.0.0
     version: 3.0.0
@@ -429,11 +426,6 @@ packages:
     dependencies:
       '@types/markdown-it': 13.0.7
       markdown-it: 14.0.0
-    dev: false
-
-  /markdown-it-custom-block@0.1.2:
-    resolution: {integrity: sha512-MfsADPwZTWikDW7SY81iNrd7Sm5u9si2Y2lIpKfz9GpfRV2uiNh+/YIhb0zApqmvR0nC/c8MpmsdRTzzs8miMA==}
-    engines: {node: '>= 6.0.0'}
     dev: false
 
   /markdown-it-emoji@3.0.0:

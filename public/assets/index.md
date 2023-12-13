@@ -1,5 +1,3 @@
-@[greetings](e)
-
 # Compatibility and Emulation
 ## Android
 [Waydroid](https://waydro.id/) :c-linux: - Container-based approach to boot a full Android system inside a Linux system with the Wayland display protocol.  
