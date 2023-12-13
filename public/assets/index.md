@@ -1,5 +1,38 @@
 @[greetings](e)
 
+# Compatibility and Emulation
+## Android
+[Waydroid](https://waydro.id/) :c-linux: - Container-based approach to boot a full Android system inside a Linux system with the Wayland display protocol.  
+[Windows Subsystem for Android](https://learn.microsoft.com/en-us/windows/android/wsa/) :c-windows: - Android counterpart of Windows Subsystem for Linux.  
+> [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSALocal) :c-windows: - Script to install WSA with Magisk and GApps
+
+## Consoles
+### Any
+[RetroArch](https://www.retroarch.com/) :c-web: :c-pc: :c-mobile: :c-console: - Frontend for emulators and game engines
+
+### GameCube / Wii
+[Dolphin](https://dolphin-emu.org/) :c-pc: :c-android: :c-console: - Powerful Gamecube and Wii emulator
+> [DolphiniOS](https://github.com/OatmealDome/dolphin-ios) :c-ios: - Port of Dolphin for iOS
+
+[Nintendon't](https://github.com/FIX94/Nintendont) :c-console: - Compatibility layer for running GameCube games on the Wii and Wii U
+
+### WiiU
+[Cemu](https://cemu.info/) :c-pc: - Most accurate WiiU Emulator avaiable.  
+[Decaf](https://github.com/decaf-emu/decaf-emu) :c-windows: :c-linux: - Alternative to Cemu
+
+### Switch
+[Yuzu](https://yuzu-emu.org/) :c-windows: :c-linux :c-android: - Experimental open-source Nintendo Switch emulator from the creators of Citra  
+[Ryujinx](https://ryujinx.org/) :c-pc: - Nintendo Switch emulator that aims to provide perfomance
+
+## System virtualization
+[VirtualBox](https://www.virtualbox.org/) :c-pc: - Cross platform virtualization tool  
+[QEMU](https://www.qemu.org/) :c-pc: :c-cli: - Command-line generic and open source machine emulator and virtualizer
+> [virt-manager](https://virt-manager.org/) :c-linux: - Linux frontend for QEMU
+
+[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) :c-windows: - Executes Linux systems inside Windows.
+
+
+
 # Modding
 ## General
 [ReVanced](https://revanced.app) :c-android: - Application that can apply various patches to numerous android apps including YouTube and TikTok. Spiritual successor to Vanced  
@@ -55,7 +88,7 @@
 
 
 
-# System-focused resources
+# System focused resources
 Those are applications and resources that their functionality is directred related with a system. An android-only video player, for example, won't come here, but an application store would
 
 ## Android
@@ -101,7 +134,9 @@ Those are applications and resources that their functionality is directred relat
 
 ### File converter
 [FFmpeg](https://ffmpeg.org/) :c-pc: :c-cli: - Powerful CLI utility for video manipulation
-- TODO: Add FFmpeg frontends
+> TODO: Add FFmpeg frontends
+
+> meow
 
 ## Mobile and Desktop integration
 [KDE Connect](https://kdeconnect.kde.org/) :c-mobile: :c-pc: - Feature rich integration app between phones and computers.
@@ -112,7 +147,7 @@ Those are applications and resources that their functionality is directred relat
 This section includes information on how you can contribute to this list
 
 ## Sections in need for contributions
-[System-focused resources -> iOS](#ios) - Needs more items and applications  
+[System focused resources -> iOS](#ios) - Needs more items and applications  
 [Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends
 [Utilities -> Media Management -> File converter](#ad-blockers) - Needs FFmpeg frontends
 
