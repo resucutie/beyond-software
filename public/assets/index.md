@@ -145,22 +145,27 @@ This section includes information on how you can contribute to this list
 ## Sections in need for contributions
 [System focused resources -> iOS](#ios) - Needs more items and applications  
 [Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends
-[Utilities -> Media Management -> File converter](#ad-blockers) - Needs FFmpeg frontends
+[Privacy and Security](#privacy-and-security) - Needs more entires
+[Compatibility and Emulation -> Consoles](#consoles) - Needs more emulators
 
 ## Guidelines
 ###### NO-MARGIN-CHANGES
 - All entries should contain programs where the user has total control over it and are virus-free. Preferably Free and Open Source applications
 - Each entry should follow the following format:
     - Name of the produt as a link (`[Product](link)`)
-    - Row of [custom icons](#custom-icons) showing the avaiable platforms in the following order:
-        - Web :c-web:
+    - Row of [custom icons](#custom-icons) showing the avaiable icons (if it contains) in the following order:
+        - Web :c-chrome: :c-firefox:
+            - If it is avaiable on all platforms: :c-web:
         - Desktop :c-windows: :c-macos: :c-linux:
-            - If it is avaiable in all platforms: :c-pc:
+            - If it is avaiable on all platforms: :c-pc:
         - Mobile :c-android: :c-ios:
-            - If it is avaiable in all platforms: :c-mobile:
-- If there's an alternative to a program, its entry should be put right next to the other with a breaking line, and not a new paragraph
-- There are cases where merging can happen, but this should be avoided, and only done when there's no difference between both programs in terms of popularity, features and UX-wise
-- The sections should be sorted in alphabetic order. But that's not required for entries
+            - If it is avaiable on all platforms: :c-mobile:
+        - Console :c-console:
+        - Source code avaiability :c-proprietary:
+        - Monetization method :c-ads: :c-freemium: :c-paid:
+- The sections should be sorted in alphabetic order. But that's not required for entries. Note that some will not follow that rule, like: [Compatibility and Emulation -> Consoles](#consoles)
+- Entries with alternatives: If there's an alternative to a program, its entry should be put right next to the other with a breaking line, and not a new paragraph
+- Merged entries: Cases where the applications are too similar in terms of popularity, features, platform and UX-wise. Should be avoided most times, instead prefering 
 
 ### Examples
 Single entry:  
@@ -177,6 +182,7 @@ Merged entries:
 :c-pc: `:c-pc:` - Runs on all PC platforms  
 :c-mobile: `:c-mobile` - Runs on all mobile platforms  
 :c-web: `:c-web` - Runs on all browsers  
+:c-console: `:c-console:` - Runs on a console  
 :c-android: `:c-android:` - Runs on Android  
 :c-ios: `:c-ios:` - Runs on iOS  
 :c-appletv: `:c-appletv` - Supports Apple TV  
@@ -186,6 +192,7 @@ Merged entries:
 :c-cli: `:c-cli` - Application only avaiable in CLI form  
 :c-chrome: `:c-chrome:` - Runs on Chrome  
 :c-firefox: `:c-firefox:` - Runs on Firefox  
+:c-proprietary: `:c-proprietary` - Is proprietary  
 :c-ads: `:c-ads:` - Contains ads  
 :c-freemium: `:c-freemium:` - Is a program that contains a Freemium payment model  
 :c-paid: `:c-paid:` - Is a paid program  

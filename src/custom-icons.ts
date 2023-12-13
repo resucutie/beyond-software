@@ -16,24 +16,24 @@ import freemium from "/icons/freemiun.svg?raw"
 import paid from "/icons/paid.svg?raw"
 import ads from "/icons/ads.svg?raw"
 
-function emoji(name: string) {return`<span class="custom-emoji">${name}</span>`}
+function emoji(name: string, alt?: string) {return`<span class="custom-emoji" ${alt ? `title="${alt}"` : ""}>${name}</span>`}
 
 export default {
-    "c-mobile": emoji(phone),
-    "c-android": emoji(android),
-    "c-ios": emoji(ios),
-    "c-pc": emoji(computer),
-    "c-windows": emoji(windows),
-    "c-macos": emoji(apple),
-    "c-linux": emoji(linux),
-    "c-cli": emoji(terminal),
-    "c-web": emoji(web),
-    "c-chrome": emoji(chrome),
-    "c-firefox": emoji(firefox),
-    "c-appletv": emoji(appletv),
-    "c-console": emoji(console),
-    "c-ads": emoji(ads),
-    "c-proprietary": emoji(proprietary),
-    "c-paid": emoji(paid),
-    "c-freemium": emoji(freemium),
+    "c-mobile": emoji(phone, "Avaiable on all mobile platforms"),
+    "c-android": emoji(android, "Avaiable on Android"),
+    "c-ios": emoji(ios, "Avaiable on iPhone"),
+    "c-pc": emoji(computer, "Avaiable on all desktop platforms"),
+    "c-windows": emoji(windows, "Avaiable on Windows"),
+    "c-macos": emoji(apple, "Avaiable on macOS"),
+    "c-linux": emoji(linux, "Avaiable on Linux"),
+    "c-cli": emoji(terminal, "Is a command line only application"),
+    "c-web": emoji(web, "Avaiable on all browsers"),
+    "c-chrome": emoji(chrome, "Avaiable on Chrome"),
+    "c-firefox": emoji(firefox, "Avaiable on Firefox"),
+    "c-appletv": emoji(appletv, "Avaiable on Apple TV"),
+    "c-console": emoji(console, "Avaiable on a console"),
+    "c-proprietary": emoji(proprietary, "Is a proprietary application"),
+    "c-ads": emoji(ads, "Contains ads"),
+    "c-freemium": emoji(freemium, "Contains paywalled features"),
+    "c-paid": emoji(paid, "Is a paid application"),
 }
