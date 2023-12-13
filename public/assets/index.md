@@ -4,7 +4,7 @@
 ## Android
 [Waydroid](https://waydro.id/) :c-linux: - Container-based approach to boot a full Android system inside a Linux system with the Wayland display protocol.  
 [Windows Subsystem for Android](https://learn.microsoft.com/en-us/windows/android/wsa/) :c-windows: - Android counterpart of Windows Subsystem for Linux.  
-> [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSALocal) :c-windows: - Script to install WSA with Magisk and GApps
+- [MagiskOnWSA](https://github.com/LSPosed/MagiskOnWSALocal) :c-windows: - Script to install WSA with Magisk and GApps
 
 ## Consoles
 ### Any
@@ -12,7 +12,7 @@
 
 ### GameCube / Wii
 [Dolphin](https://dolphin-emu.org/) :c-pc: :c-android: :c-console: - Powerful Gamecube and Wii emulator
-> [DolphiniOS](https://github.com/OatmealDome/dolphin-ios) :c-ios: - Port of Dolphin for iOS
+- [DolphiniOS](https://github.com/OatmealDome/dolphin-ios) :c-ios: - Port of Dolphin for iOS
 
 [Nintendon't](https://github.com/FIX94/Nintendont) :c-console: - Compatibility layer for running GameCube games on the Wii and Wii U
 
@@ -27,7 +27,7 @@
 ## System virtualization
 [VirtualBox](https://www.virtualbox.org/) :c-pc: - Cross platform virtualization tool  
 [QEMU](https://www.qemu.org/) :c-pc: :c-cli: - Command-line generic and open source machine emulator and virtualizer
-> [virt-manager](https://virt-manager.org/) :c-linux: - Linux frontend for QEMU
+- [virt-manager](https://virt-manager.org/) :c-linux: - Linux frontend for QEMU
 
 [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/) :c-windows: - Executes Linux systems inside Windows.
 
@@ -134,9 +134,7 @@ Those are applications and resources that their functionality is directred relat
 
 ### File converter
 [FFmpeg](https://ffmpeg.org/) :c-pc: :c-cli: - Powerful CLI utility for video manipulation
-> TODO: Add FFmpeg frontends
-
-> meow
+- TODO: Add FFmpeg frontends
 
 ## Mobile and Desktop integration
 [KDE Connect](https://kdeconnect.kde.org/) :c-mobile: :c-pc: - Feature rich integration app between phones and computers.
@@ -152,6 +150,7 @@ This section includes information on how you can contribute to this list
 [Utilities -> Media Management -> File converter](#ad-blockers) - Needs FFmpeg frontends
 
 ## Guidelines
+###### NO-MARGIN-CHANGES
 - All entries should contain programs where the user has total control over it and are virus-free. Preferably Free and Open Source applications
 - Each entry should follow the following format:
     - Name of the produt as a link (`[Product](link)`)
