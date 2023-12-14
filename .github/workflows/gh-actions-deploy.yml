@@ -40,7 +40,7 @@ jobs:
           version: 8
           run_install: false
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
       - name: Build
         run: pnpm run build
       - name: Setup Pages
