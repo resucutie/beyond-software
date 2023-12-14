@@ -144,9 +144,9 @@ This section includes information on how you can contribute to this list
 
 ## Sections in need for contributions
 [System focused resources -> iOS](#ios) - Needs more items and applications  
-[Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends
-[Privacy and Security](#privacy-and-security) - Needs more entires
-[Compatibility and Emulation -> Consoles](#consoles) - Needs more emulators
+[Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends  
+[Privacy and Security](#privacy-and-security) - Needs more entires  
+[Compatibility and Emulation -> Consoles](#consoles) - Needs more emulators  
 
 ## Guidelines
 ###### NO-MARGIN-CHANGES
