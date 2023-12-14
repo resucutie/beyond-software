@@ -2,7 +2,7 @@ import path from "path";
 import process from "process";
 import { defineConfig } from "vite";
 
-const BASE_URL = "/beyond-software/"
+const BASE_URL = "/"
 
 export default defineConfig({
     root: "src",
