@@ -20,11 +20,12 @@ Check the contribution rules first, avaiable on the webpage
 1. Download [Git](https://git-scm.com/) and [Node](https://nodejs.org/)
 2. `git clone https://github.com/abUwUser/beyond-software.git`
 3. `cd beyond-software`
-4. `npm i`
+4. `npm i --global pnpm`
+4. `pnpm i`
 
 ## Developing
-Run `npm run dev` in the project file to run the dev enviorment.
+Run `pnpm dev` in the project file to run the dev enviorment.
 
 ## Production
-1. `npm run build`
-2. `npm run preview`
+1. `pnpm build`
+2. `pnpm preview`
