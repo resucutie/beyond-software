@@ -35,7 +35,8 @@ const defaultRender = md.renderer.rules.link_open || function (tokens, idx, opti
     return self.renderToken(tokens, idx, options);
 };  
 md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-    tokens[idx].attrSet('target', '_blank');
+    const token = tokens[idx]
+    if(!token.attrGet("href")?.startsWith("#")) token.attrSet('target', '_blank');
     return defaultRender(tokens, idx, options, env, self);
 };
 
