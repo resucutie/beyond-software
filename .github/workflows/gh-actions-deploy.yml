@@ -36,6 +36,9 @@ jobs:
           node-version: 18
       - name: Install pnpm
         uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: false
       - name: Install dependencies
         run: pnpm install
       - name: Build
