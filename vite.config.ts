@@ -2,6 +2,8 @@ import path from "path";
 import process from "process";
 import { defineConfig } from "vite";
 
+const BASE_URL = "/beyond-software/"
+
 export default defineConfig({
     root: "src",
     publicDir: "../public",
@@ -12,4 +14,5 @@ export default defineConfig({
     resolve: {
         alias: { "/src": path.resolve(process.cwd(), "src") }
     },
+    base: BASE_URL
 });

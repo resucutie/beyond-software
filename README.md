@@ -14,3 +14,17 @@
 Check the contribution rules first, avaiable on the webpage
 
 **Please star over forking. This is to prevent any outdated info from being out online**
+
+# Running for dev env
+## Installing
+1. Download [Git](https://git-scm.com/) and [Node](https://nodejs.org/)
+2. `git clone https://github.com/abUwUser/beyond-software.git`
+3. `cd beyond-software`
+4. `npm i`
+
+## Developing
+Run `npm run dev` in the project file to run the dev enviorment.
+
+## Production
+1. `npm run build`
+2. `npm run preview`
