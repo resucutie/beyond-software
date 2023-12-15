@@ -70,8 +70,12 @@
 
 
 
-
 # Productivity
+## Browser
+[Firefox](https://www.mozilla.org/en-US/firefox/new/) :c-pc: :c-mobile - Well-known open source browser developed by Mozilla.
+
+[ungoogled-chromium](https://ungoogled-software.github.io/) :c-pc: - Chromium fork that removes Google integration
+
 ## Cloud
 [Nextcloud](https://nextcloud.com/) - Selfhostable cloud service
 
@@ -93,9 +97,11 @@
 [Krita](https://krita.org/) :c-pc: - Free and Open Source drawing program made by the KDE team  
 [Inkscape](https://inkscape.org/) :c-pc: - Vector image drawing program  
 
-## Video manipulation
-[Kdenlive](https://kdenlive.org/) :c-pc: - Open source video editing tool made by the KDE team.  
-[Shotcut](https://shotcut.org/) :c-pc: - Open source advanced video editing tool.
+## Office Suite
+[LibreOffice](https://www.libreoffice.org/) :c-pc: - Free and open source office suite tool  
+[ONLYOFFICE](https://www.onlyoffice.com/) :c-web: :c-pc: - Online and desktop office suite tool with great support for MS Office document formats
+
+[Office Tool Plus](https://otp.landian.vip/) :c-windows: - Microsoft Office setup wizard creator. Useful if you do not have an Office installation wizard
 
 ## Organization
 [Logseq](https://logseq.com/) :c-pc: :c-android: - Open source replacement for Obsidian
@@ -103,6 +109,11 @@
 [Tasks.org](https://tasks.org/) :c-android: - Powerful tasks app
 
 [draw.io](https://www.drawio.com/) :c-web: :c-pc: - Diagram app creating tool
+
+## Video manipulation
+[Kdenlive](https://kdenlive.org/) :c-pc: - Open source video editing tool made by the KDE team.  
+[Shotcut](https://shotcut.org/) :c-pc: - Open source advanced video editing tool.
+
 
 
 
@@ -145,6 +156,11 @@ Those are applications and resources that their functionality is directred relat
 
 [SD Maid SE](https://github.com/d4rken-org/sdmaid-se) :c-android: - System cleaner for Android phones
 
+### Archive managers
+
+[7-zip](https://www.7-zip.org/) :c-windows: - Powerful open source file archive manager clients.  
+[Ark](https://apps.kde.org/ark/) :c-linux: | [GNOME Archive Manager](https://wiki.gnome.org/Apps/FileRoller) :c-linux: - Archive managers for Linux
+
 ## Media management
 ### Content downloader
 [yt-dlp](https://github.com/yt-dlp/yt-dlp) :c-cli: - Youtube-dl fork that can download videos from YouTube  
@@ -172,7 +188,7 @@ For contributing, you can always make a Pull Request on [this file](https://gith
 [System focused resources -> iOS](#ios) - Needs more items and applications  
 [Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends  
 [Privacy and Security](#privacy-and-security) - Needs more entires  
-[Compatibility and Emulation -> Consoles](#consoles) - Needs more emulators  
+[Compatibility and Emulation](#compatibility-and-emulation) - Needs more emulators  
 
 ## Guidelines
 ###### NO-MARGIN-CHANGES
