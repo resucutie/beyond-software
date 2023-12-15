@@ -11,9 +11,10 @@
 - Adding an issue requesting a new entry
 - (preferred) Make a Pull Request
 
-Check the contribution rules first, avaiable on the webpage
+Check the guidelines first [avaiable on the webpage](https://beyondsoftware.info/#guidelines) or [directly at the file](/public/assets/index.md#guidelines).  
+The whole list of software is avaiable at [/public/assets/index.md](/public/assets/index.md).
 
-**Please star over forking. This is to prevent any outdated info from being out online**
+**Please delete your forks after merging with the main repo. This is to prevent outdated information to be out in the wild**
 
 # Running for dev env
 ## Installing
