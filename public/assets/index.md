@@ -19,7 +19,7 @@
 [Decaf](https://github.com/decaf-emu/decaf-emu) :c-windows: :c-linux: - Alternative to Cemu
 
 ### Switch
-[Yuzu](https://yuzu-emu.org/) :c-windows: :c-linux :c-android: - Experimental open-source Nintendo Switch emulator from the creators of Citra  
+[Yuzu](https://yuzu-emu.org/) :c-windows: :c-linux: :c-android: - Experimental open-source Nintendo Switch emulator from the creators of Citra  
 [Ryujinx](https://ryujinx.org/) :c-pc: - Nintendo Switch emulator that aims to provide perfomance
 
 ## System virtualization
