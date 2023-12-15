@@ -65,12 +65,26 @@
 [uBlock Origin](https://github.com/gorhill/uBlock) :c-web: - Open source community made adblocker  
 [PowerTunnel](https://github.com/krlvm/PowerTunnel) :c-pc: :c-android: - Desktop and Android extensible proxy server. Includes adblocking and anti-censorship tool
 
+## VPN
+[Proton VPN](https://protonvpn.com/) :c-pc: :c-mobile: - Secure VPN provider
+
 
 
 
 # Productivity
-## E-mail client
-[Thunderbird](https://www.thunderbird.net/) :c-pc: - E-mail client developed by Mozilla. Replacement for Outlook.
+## Cloud
+[Nextcloud](https://nextcloud.com/) - Selfhostable cloud service
+
+## E-mail
+### Providers
+[ProtonMail](https://proton.me/mail) :c-web: :c-mobile: - Secure Email provider based in Switzerland.  
+[Tuta](https://proton.me/mail) :c-web: :c-pc: :c-mobile: - Secure end-to-end encrypted Email provider.  
+[Disroot](https://proton.me/mail) :c-web: - Platform providing online services focused on privacy.  
+
+### Clients
+[Thunderbird](https://www.thunderbird.net/) :c-pc: - E-mail client developed by Mozilla. Replacement for Outlook.  
+[KMail](https://apps.kde.org/kmail2/) :c-linux: - Mail client software that's part of the Kontact suite.  
+[Evolution](https://wiki.gnome.org/Apps/Evolution) :c-linux: - Personal information management application that provides integrated mail, calendaring and address book functionality.  
 
 [K-9 Mail](https://k9mail.app/) :c-android: | [FairEmail](https://github.com/M66B/FairEmail) :c-android: - Android email clients.
 
@@ -133,7 +147,7 @@ Those are applications and resources that their functionality is directred relat
 
 ## Media management
 ### Content downloader
-[yt-dlp]
+[yt-dlp](https://github.com/yt-dlp/yt-dlp) :c-cli: - Youtube-dl fork that can download videos from YouTube  
 [Cobalt](https://cobalt.tools) :c-web: - Online video and audio downloader without ads or annoying features. Supports multiple services, including YouTube and TikTok.  
 [Parabolic](https://nickvision.org/parabolic.html) :c-windows: :c-linux: - Desktop application for downloading YouTube videos
 
@@ -141,10 +155,11 @@ Those are applications and resources that their functionality is directred relat
 [FFmpeg](https://ffmpeg.org/) :c-pc: :c-cli: - Powerful CLI utility for video manipulation
 - TODO: Add FFmpeg frontends
 
-## Mobile and Desktop integration
+## System integration
 [KDE Connect](https://kdeconnect.kde.org/) :c-pc: :c-mobile: - Feature rich integration app between phones and computers.
 
-[LocalSend](https://localsend.org/) :c-pc: :c-mobile: - Open source replacement for AirDrop that works on your local network
+[LocalSend](https://localsend.org/) :c-pc: :c-mobile: - Open source replacement for AirDrop that works on your local network   
+[Syncting](https://syncthing.net/) :c-pc: :c-android: - Real-time continuous file synchronization program
 
 
 
