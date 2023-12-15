@@ -69,9 +69,15 @@
 
 
 # Productivity
+## E-mail client
+[Thunderbird](https://www.thunderbird.net/) :c-pc: - E-mail client developed by Mozilla. Replacement for Outlook.
+
+[K-9 Mail](https://k9mail.app/) :c-android: | [FairEmail](https://github.com/M66B/FairEmail) :c-android: - Android email clients.
+
 ## Image manipulation
-[Krita](https://krita.org/) :c-pc: - Free and Open Source powerful drawing program  
-[GIMP](https://www.gimp.org/) :c-pc: - Open source image editing program
+[GIMP](https://www.gimp.org/) :c-pc: - Open source powerful image editor  
+[Krita](https://krita.org/) :c-pc: - Free and Open Source drawing program made by the KDE team  
+[Inkscape](https://inkscape.org/) :c-pc: - Vector image drawing program  
 
 ## Video manipulation
 [Kdenlive](https://kdenlive.org/) :c-pc: - Open source video editing tool made by the KDE team.  
@@ -127,6 +133,7 @@ Those are applications and resources that their functionality is directred relat
 
 ## Media management
 ### Content downloader
+[yt-dlp]
 [Cobalt](https://cobalt.tools) :c-web: - Online video and audio downloader without ads or annoying features. Supports multiple services, including YouTube and TikTok.  
 [Parabolic](https://nickvision.org/parabolic.html) :c-windows: :c-linux: - Desktop application for downloading YouTube videos
 
@@ -135,7 +142,9 @@ Those are applications and resources that their functionality is directred relat
 - TODO: Add FFmpeg frontends
 
 ## Mobile and Desktop integration
-[KDE Connect](https://kdeconnect.kde.org/) :c-mobile: :c-pc: - Feature rich integration app between phones and computers.
+[KDE Connect](https://kdeconnect.kde.org/) :c-pc: :c-mobile: - Feature rich integration app between phones and computers.
+
+[LocalSend](https://localsend.org/) :c-pc: :c-mobile: - Open source replacement for AirDrop that works on your local network
 
 
 
