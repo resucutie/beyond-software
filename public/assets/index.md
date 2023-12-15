@@ -148,13 +148,43 @@ Those are applications and resources that their functionality is directred relat
 ### Jailbreak
 [iOS Jailbreak CFW guide](https://ios.cfw.guide/) - A complete iOS modding guide, from stock to jailbroken.
 
+## Windows
+### Activators
+[Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) :c-windows: - Open source Windows and MS Office activation tool.
+
+### Customization
+[TransculentTB](https://github.com/massgravel/Microsoft-Activation-Scripts) :c-windows: - Utility that makes the taskbar translucent/transparent on Windows 10 and Windows 11.  
+[ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) :c-windows: - Patcher that adds useful enhancements to the Windows taskbar
+
+[Rainmeter](https://www.rainmeter.net/) :c-windows: - Desktop customization tool that adds widgets
+
+[Lively Wallpaper](https://www.rocksdanister.com/lively/) :c-windows: - Free and open source tool for animated desktops
+
+[PowerToys](https://github.com/microsoft/PowerToys/) :c-windows: - Set of utilities to enhance the Windows experience
+
+[Winaero Tweaker](https://winaero.com/winaero-tweaker/) :c-windows: - Tool for doing small register tweaks on Windows
+
+### De-bloating
+[TronScript](https://github.com/bmrf/tron) :c-windows: - Most efficient and automated cleaning and disinfection tool for Windows  
+[SofiaScript](https://github.com/farag2/Sophia-Script-for-Windows) :c-windows: - Powershell script that contains more than 150 functions
+
 
 
 # Utilities
+## Bootable media creation utilities
+[Rufus](https://rufus.ie/) :c-windows: - Standard bootable USB media creation tool  
+[Ventoy](https://www.ventoy.net/) :c-windows: :c-linux: - Boot in multiple bootable medias with one USB.  
+[WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng) :c-linux: - Windows media creation tool for Linux  
+
 ## File management
+[Files](https://files.community/) :c-windows: - File explorer that improves upon Windows's original file explorer  
+[Directory Opus](https://www.gpsoft.com.au/) :c-windows: :c-paid: :c-proprietary: - Extremely powerful file manager for Windows  
 [MiXplorer](https://mixplorer.com/) :c-android: - Poweful file manager for Android
 
+[BleachBit](https://www.bleachbit.org/) :c-windows: :c-linux: - Open source system cleaner for Windows and Linux  
 [SD Maid SE](https://github.com/d4rken-org/sdmaid-se) :c-android: - System cleaner for Android phones
+
+[Total Commander](https://www.ghisler.com/) :c-windows: :c-proprietary: - File manager known for its powerful file removal tool.
 
 ### Archive managers
 
