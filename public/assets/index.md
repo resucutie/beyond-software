@@ -72,7 +72,7 @@
 
 # Productivity
 ## Browser
-[Firefox](https://www.mozilla.org/en-US/firefox/new/) :c-pc: :c-mobile - Well-known open source browser developed by Mozilla.
+[Firefox](https://www.mozilla.org/en-US/firefox/new/) :c-pc: :c-mobile: - Well-known open source browser developed by Mozilla.
 
 [ungoogled-chromium](https://ungoogled-software.github.io/) :c-pc: - Chromium fork that removes Google integration
 
