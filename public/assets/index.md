@@ -123,28 +123,30 @@
 
 
 
-# System focused resources
+# System resources
 Those are applications and resources that their functionality is directred related with a system. An android-only video player, for example, won't come here, but an application store would
 
 ## Android
 
-### Application installation
+### Application stores
 [F-Droid](https://f-droid.org/) :c-android: - Decentralized store for downloading FOSS applications.  
 [Droid-ify](https://droidify.eu.org/) :c-android: | [Neo Store](https://github.com/NeoApplications/Neo-Store) :c-android: - Material You frontends for F-Droid and IzzyOnDroid
+
+[Obtanium](https://github.com/ImranR98/Obtainium) :c-android: - Update manager for Android that downloads content directly from the source
 
 [Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore) :c-android: - Open source alternative to Google Play Store that allows a more private navigation.
 
 [APKMirror](https://apkmirror.com) :c-web: - Website to download dumped APKs
 
 ### Customization
-[Repainter](https://repainter.app/) :c-android: :c-freemium: - Application to apply custom Monet color schemes
+[Repainter](https://repainter.app/) :c-android: :c-freemium: :c-proprietary: - Application to apply custom Monet color schemes
 
-[Nova Launcher](https://novalauncher.com/) :c-android: :c-freemium: - A well-known grid based launcher  
+[Nova Launcher](https://novalauncher.com/) :c-android: :c-freemium: :c-proprietary: - A well-known grid based launcher  
 [Lawnchair](https://lawnchair.app/) :c-android: - Free and open source grid based launcher  
 [Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a more search-focused widget based experience
 
 ### Enhancements
-[Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) :c-android: - Controls system rotation
+[Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) :c-android: :c-proprietary: - Controls system rotation
 
 ## iOS
 ### Application stores
@@ -226,7 +228,7 @@ This section includes information on how you can contribute to this list
 For contributing, you can always make a Pull Request on [this file](https://github.com/abUwUser/beyond-software/blob/master/public/assets/index.md). It is recommended to not use GitHub's built in editor, and to instead download the files locally. We assume that you know the basics of git and contributing on GitHub.
 
 ## Sections in need for contributions
-[System focused resources -> iOS](#ios) - Needs more items and applications  
+[System resources -> iOS](#ios) - Needs more items and applications  
 [Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends  
 [Privacy and Security](#privacy-and-security) - Needs more entires  
 [Compatibility and Emulation](#compatibility-and-emulation) - Needs more emulators  
