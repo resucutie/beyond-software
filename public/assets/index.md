@@ -42,7 +42,8 @@
 [BetterDiscord](https://betterdiscord.app/) :c-pc: - A well-known plugin-based Discord desktop client mod. The most popular option  
 [Replugged](https://replugged.dev/) :c-pc: - A Discord desktop client mod made with a way more robust API for plugins
 
-[OpenAsar](https://replugged.dev/) :c-pc: - Rewrite of Discord's desktop code to increase speed. *Note: Vencord's installer offers the option to install OpenAsar*
+[OpenAsar](https://replugged.dev/) :c-pc: - Rewrite of Discord's desktop code to optimize the client's startup and reduce size.  
+--Note: Vencord's installer offers the option to install OpenAsar--
 
 [Vesktop](https://github.com/Vencord/Vesktop) :c-pc: - Cross-platform desktop app that includes Vencord by default. Offers screen sharing for Wayland as well
 
@@ -59,7 +60,14 @@
 [Spicetify](https://spicetify.app/) :c-pc: - Multiplatform command-line tool to customize Spotify
 
 ## Telegram
-[Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
+[Random Lists' list of Telegram clients](https://t.me/useful_lists/2) - List of Telegram clients  
+--Note: Not all software in there may be trustable. Please pay attention.--
+
+[Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods  
+[exteraGram](https://github.com/exteraSquad/exteraGram) :c-android: - User friendly Telegram client that contains a lot of visual examples (add note to install the beta versions as it is more up to date)
+
+[Unigram](https://github.com/UnigramDev/Unigram) :c-windows: - [Fluent](https://fluent2.microsoft.design/) design compliant Telegram client  
+[materialgram](https://github.com/kukuruzka165/materialgram) :c-pc: - Material-like Telegram Client
 
 
 
