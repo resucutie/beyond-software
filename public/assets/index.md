@@ -36,7 +36,6 @@
 [ReVanced](https://revanced.app) :c-android: - Application that can apply various patches to numerous android apps including YouTube and TikTok. Spiritual successor to Vanced  
 --Note: It requires the need of a microG client for YouTube and YouTube music if your device does not have root access. At the moment, the most compatible microG manager with ReVanced, according to the community, is [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG)--
 
-
 ## Discord
 [Vencord](https://vencord.dev/) :c-web: :c-pc: - A regex patch based Discord desktop client mod. Most plugins come built in  
 [BetterDiscord](https://betterdiscord.app/) :c-pc: - A well-known plugin-based Discord desktop client mod. The most popular option  
@@ -159,6 +158,19 @@ Those are applications and resources that their functionality is directred relat
 ### Enhancements
 [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) :c-android: :c-proprietary: - Controls system rotation
 
+## Consoles (Homebrew)
+--Note: If you're going to watch an homebrew youtube tutorial, please watch an up-to-date one while reading a text based guide. Trust first the text based guide--
+### Nintendo
+[CFW's DSi guide](https://wii.guide/) :c-resource: - Guide for homebrewing the Wii  
+[RiiConnect24's Wii guide](https://wii.guide/) :c-resource: - Guide for homebrewing the Wii  
+[Nintendo Homebrew's 3ds guide](https://3ds.hacks.guide/) :c-resource: - Guide for homebrewing the 3ds  
+[Nintendo Homebrew's WiiU guide](https://wiiu.hacks.guide/) :c-resource: - Guide for homebrewing the WiiU  
+[Nintendo Homebrew's Switch guide](https://nh-server.github.io/switch-guide/) :c-resource: - Guide for homebrewing the Nintendo Switch  
+
+### Sony
+[PSPunk's PSP guide](https://www.pspunk.com/psp-cfw/) :c-resource: - Guide for homebrewing the PSP  
+[hacks.guide's Vita guide](https://vita.hacks.guide/) :c-resource: - Guide for homebrewing the PS Vita  
+
 ## iOS
 ### Application stores
 [AltStore](https://altstore.io/) :c-windows: :c-macos: :c-ios: - Application store for sideloading apps  
@@ -241,9 +253,10 @@ Those are applications and resources that their functionality is directred relat
 # Contributing to this list
 This section includes information on how you can contribute to this list
 
-For contributing, you can always make a Pull Request on [this file](https://github.com/abUwUser/beyond-software/blob/master/public/assets/index.md). It is recommended to not use GitHub's built in editor, and to instead download the files locally. We assume that you know the basics of git and contributing on GitHub.
+For contributing, you can always make a Pull Request on [this file](https://github.com/abUwUser/beyond-software/blob/master/public/assets/index.md). It is recommended to not use GitHub's built in editor, and to instead download the files locally using Git. We assume that you know the basics of git and contributing on GitHub.
 
 ## Sections in need for contributions
+[System resources > Consoles (Homebrew)](#consoles-homebrew) - Needs more guides  
 [System resources -> iOS](#ios) - Needs more items and applications  
 [Utilities -> Media Management -> File converter](#file-converter) - Needs FFmpeg frontends  
 [Privacy and Security](#privacy-and-security) - Needs more entires  
