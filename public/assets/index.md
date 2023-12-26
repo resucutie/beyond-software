@@ -49,14 +49,17 @@
 [Vendetta](https://github.com/vendetta-mod/Vendetta) :c-mobile: - Multi-platform Discord mobile client mod  
 [Enmity](https://enmity.app/) :c-ios: - iPhone exclusive Discord client mod. Requires Alt Store
 
-## Telegram
-[Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
+## Instagram
+[Instander](https://thedise.me/instander/) :c-android: :c-proprietary: - Mod for Instagram
+
+## Notion
+[notion-enhancer](https://notion-enhancer.github.io/) :c-web: :c-pc: - Enhancer for Notion that includes a bunch of quality of life improvements.
 
 ## Spotify
 [Spicetify](https://spicetify.app/) :c-pc: - Multiplatform command-line tool to customize Spotify
 
-## Notion
-[notion-enhancer](https://notion-enhancer.github.io/) :c-web: :c-pc: - Enhancer for Notion that includes a bunch of quality of life improvements.
+## Telegram
+[Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods
 
 
 
