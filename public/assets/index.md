@@ -220,6 +220,11 @@ Those are applications and resources that their functionality is directred relat
 [LocalSend](https://localsend.org/) :c-pc: :c-mobile: - Open source replacement for AirDrop that works on your local network   
 [Syncting](https://syncthing.net/) :c-pc: :c-android: - Real-time continuous file synchronization program
 
+## Unit conversion
+
+[ConverterNOW](https://converter-now.web.app/) :c-web: :c-windows: :c-linux: :c-android: - Cross-platform conversion tool  
+[Unitto](https://github.com/sadellie/unitto) :c-android: - Calculator that has unit conversion tools
+
 
 
 # Contributing to this list
