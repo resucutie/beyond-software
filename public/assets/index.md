@@ -60,7 +60,7 @@
 [Spicetify](https://spicetify.app/) :c-pc: - Multiplatform command-line tool to customize Spotify
 
 ## Telegram
-[Random Lists' list of Telegram clients](https://t.me/useful_lists/2) - List of Telegram clients  
+[Random Lists' list of Telegram clients](https://t.me/useful_lists/2) :c-resource: - List of Telegram clients  
 --Note: Not all software in there may be trustable. Please pay attention.--
 
 [Nekogram](https://nekogram.app/) :c-android: - Open-source third-party Telegram client with few but useful mods  
@@ -165,7 +165,7 @@ Those are applications and resources that their functionality is directred relat
 [Sideloadey](https://sideloadly.io/) :c-windows: :c-macos: :c-ios: :c-appletv: - Application store for sideloading apps
 
 ### Jailbreak
-[iOS Jailbreak CFW guide](https://ios.cfw.guide/) - A complete iOS modding guide, from stock to jailbroken.
+[iOS Jailbreak CFW guide](https://ios.cfw.guide/) :c-resource: - A complete iOS modding guide, from stock to jailbroken.
 
 ## Windows
 ### Activators
@@ -297,6 +297,7 @@ Merged entries:
 :c-ads: `:c-ads:` - Contains ads  
 :c-freemium: `:c-freemium:` - Is a program that contains a Freemium payment model  
 :c-paid: `:c-paid:` - Is a paid program  
+:c-resource: `:c-resource:` - Resource to read  
 
 ## Thanks
 Thanks to:
