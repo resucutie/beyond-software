@@ -34,7 +34,8 @@
 # Modding
 ## General
 [ReVanced](https://revanced.app) :c-android: - Application that can apply various patches to numerous android apps including YouTube and TikTok. Spiritual successor to Vanced  
---Note: It requires the need of a microG client for YouTube and YouTube music if your device does not have root access. At the moment, the most compatible microG manager with ReVanced, according to the community, is [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG)--
+--Note: It requires the need of a microG client for YouTube and YouTube music if your device does not have root access. At the moment, the most compatible microG manager with ReVanced, according to the community, is [Vanced MicroG](https://github.com/TeamVanced/VancedMicroG)--  
+[LSPatch](https://github.com/LSPosed/LSPatch) :c-android: - Rootless implementation of LSPosed framework that patches APKs
 
 ## Discord
 [Vencord](https://vencord.dev/) :c-web: :c-pc: - A regex patch based Discord desktop client mod. Most plugins come built in  
@@ -154,6 +155,17 @@ Those are applications and resources that their functionality is directred relat
 [Nova Launcher](https://novalauncher.com/) :c-android: :c-freemium: :c-proprietary: - A well-known grid based launcher  
 [Lawnchair](https://lawnchair.app/) :c-android: - Free and open source grid based launcher  
 [Kvaesitso](https://kvaesitso.mm20.de/) :c-android: - Application launcher that provides a more search-focused widget based experience
+
+### Deep modifications
+[Shizuku](https://shizuku.rikka.app/) :c-android: - Application to give access to system APIs with adb/root privileges. Doesn't suffer from the risks of rooting, but also is not as powerful as such
+- [awesome-shizuku](https://github.com/ThePBone/awesome-shizuku) :c-resource: - List of applications that uses Shizuku in various ways
+
+------------
+
+--Note: all of the entries below on this section will require rooting in some way. This can cause applications to not work and will likely cause GMS to be disabled, potentially making banking apps and other sensitive applications unusable--
+
+[Magisk](https://github.com/topjohnwu/Magisk) :c-android: - Suite of open source software for deep customizations. Most recommended option for SU manager.  
+[LSPosed](https://github.com/LSPosed/LSPosed) :c-android: - Framework that can modify the behavior of the system and apps directly from its source code. Maintained fork of Xposed
 
 ### Enhancements
 [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) :c-android: :c-proprietary: - Controls system rotation
