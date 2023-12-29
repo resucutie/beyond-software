@@ -11,8 +11,11 @@ const args = process.argv.slice(2)
 const DIST_FOLDER = path.join(process.cwd(), "dist")
 const LIST_FOLDER = path.resolve(args[0] || "./assets/index.md")
 const HTML_TEMPLATE = path.join(process.cwd(), "./src/index.html")
+const CSS_FILE = path.join(process.cwd(), "./src/style.css")
 const HTML_REPLACE_TAGS = {
     MD_REPLACE: "<!-- PREPROCESSOR-MD-DISPLAY-REPLACE -->",
+    MD_ANCHORS: "<!-- PREPROCESSOR-MD-ANCHORS-REPLACE -->",
+    MD_ANCHORS_FIRST: "<!-- PREPROCESSOR-MD-ANCHORS-FIRST-REPLACE -->",
 }
 
 const main = async () => {
@@ -24,16 +27,32 @@ const main = async () => {
     await ensureDistFolder()
 
     const mdContents = await fs.promises.readFile(LIST_FOLDER, { encoding: 'utf8' })
-    console.log(`successfully read ${path.relative(process.cwd(), LIST_FOLDER)} (${utils.blobSize(mdContents)} bytes). processing it`)
+    console.log(`successfully read ${path.relative(process.cwd(), LIST_FOLDER)} (${utils.blobSize(mdContents)} bytes)`)
     
-    const processedHtml = mdProcessor(mdContents)
-    console.log(`generated an HTML with ${utils.blobSize(processedHtml)} bytes. injecting into ${path.relative(process.cwd(), HTML_TEMPLATE)}`)
+    console.log("processing html contents")
+    const processedContent = mdProcessor(mdContents)
+    const processedHtml = processedContent.output
+    console.log(`successfully converted list to HTML (${utils.blobSize(processedHtml)} bytes)`)
     
+    console.log(`reading html template (${path.relative(process.cwd(), HTML_TEMPLATE)})`)
     const templateHtml = await fs.promises.readFile(HTML_TEMPLATE, { encoding: 'utf8' })
-    const htmlOutput = templateHtml.replace(HTML_REPLACE_TAGS.MD_REPLACE, processedHtml)
+    console.log("injecting generated content")
+    let htmlOutput = templateHtml.replace(HTML_REPLACE_TAGS.MD_REPLACE, processedHtml)
+    console.log("injecting sidebar anchors")
+    htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.MD_ANCHORS, processedContent.anchors.map(anchorInfo => {
+        return `<a href="#${anchorInfo.slug}" class="toc-content ${anchorInfo.tag}">${anchorInfo.title}</a>`
+    }).join(""))
+    console.log("injecting OTHER anchors")
+    htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.MD_ANCHORS_FIRST, "#" + processedContent.anchors[0].slug)
+
     const outputHtmlFile = path.join(DIST_FOLDER, "./index.html")
     await fs.promises.writeFile(outputHtmlFile, htmlOutput)
     console.log(`wrote output HTML file to ${outputHtmlFile}`)
+
+    const outputStylesPath = path.join(process.cwd(), "./dist/style.css")
+    console.log(`copying stylesheet to ${path.relative(process.cwd(), outputStylesPath)}`)
+    await fs.promises.copyFile(CSS_FILE, outputStylesPath)
+    console.log(`copied stylesheet`)
 }
 
 const ensureDistFolder = async () => {
@@ -48,11 +67,17 @@ const ensureDistFolder = async () => {
 }
 
 const mdProcessor = (content) => {
-    let firstAnchorElement
+    let anchors = []
     const md = markdownIt()
         .use(mdAnchor, {
             callback: (token, info) => {
                 if(!(token.tag === "h1" || token.tag === "h2")) return
+
+                anchors.push({
+                    slug: info.slug,
+                    title: info.title,
+                    tag: token.tag
+                })
 
                 // const node = document.createElement("a");
                 // node.setAttribute("href", `#${info.slug}`)
@@ -60,8 +85,6 @@ const mdProcessor = (content) => {
                 // node.appendChild(document.createTextNode(info.title));
                 // node.onclick = closeDrawerIfMobile
                 // document.getElementById("toc")?.appendChild(node)
-
-                if(!firstAnchorElement) firstAnchorElement = info.slug
             }
         })
         .use(mdEmojis.full, /*{defs: customIcons}*/)
@@ -77,7 +100,10 @@ const mdProcessor = (content) => {
         return defaultRender(tokens, idx, options, env, self);
     };
 
-    return md.render(content)
+    return {
+        output: md.render(content),
+        anchors
+    }
 }
 
 const utils = {

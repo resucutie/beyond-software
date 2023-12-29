@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node preprocessor.js"
+    "build": "node preprocessor.js",
+    "view-build": "http-server ./dist"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "markdown-it-anchor": "^8.6.7",
     "markdown-it-emoji": "^3.0.0",
     "markdown-it-small": "^1.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
