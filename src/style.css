@@ -112,6 +112,9 @@ blockquote > p {
 #drawer svg {
     fill: currentColor;
 }
+#app.nojs #drawer {
+    display: none;
+}
 
 #sidebar {
     padding: 16px;
@@ -134,9 +137,12 @@ blockquote > p {
     font-size: 22px;
     text-align: center;
     margin-bottom: 16px;
-    margin-left: 32px;
     color: var(--accent);
     text-decoration: none;
+}
+
+#app:not(.nojs) .sidebar-name {
+    margin-left: 32px;
 }
 
 .toc-content {
@@ -265,21 +271,28 @@ blockquote > p {
 }
 
 @media (orientation: portrait) {
-    #sidebar {
+    #app:not(.nojs) #sidebar {
         width: calc(100vw - 32px);
         min-width: calc(100vw - 32px);
         max-width: calc(100vw - 32px);
     }
-    #sidebar.hidden{
+    #app:not(.nojs) #sidebar.hidden{
         margin-left: calc(-100vw);
     }
-    .sidebar-name{
+    #app:not(.nojs) .sidebar-name{
         margin-left: 0;
     }
-    #markdown {
+    #app:not(.nojs) #markdown {
         width: calc(100vw - 32px*2);
         min-width: calc(100vw - 32px*2);
         max-width: calc(100vw - 32px*2);
+    }
+
+    #markdown {
         padding: 32px;
+    }
+
+    #app.nojs #sidebar {
+        display: none;
     }
 }
