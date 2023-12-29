@@ -6,12 +6,15 @@ const mdAnchor = require("markdown-it-anchor")
 const mdEmojis = require("markdown-it-emoji")
 const mdSmall = require("markdown-it-small")
 
+const customIcons = require("./custom-icons.js")
+
 const args = process.argv.slice(2)
 
 const DIST_FOLDER = path.join(process.cwd(), "dist")
 const LIST_FOLDER = path.resolve(args[0] || "./assets/index.md")
 const HTML_TEMPLATE = path.join(process.cwd(), "./src/index.html")
 const CSS_FILE = path.join(process.cwd(), "./src/style.css")
+const ICONS_FOLDER = path.join(process.cwd(), "./assets/icons")
 const HTML_REPLACE_TAGS = {
     MD_REPLACE: "<!-- PREPROCESSOR-MD-DISPLAY-REPLACE -->",
     MD_ANCHORS: "<!-- PREPROCESSOR-MD-ANCHORS-REPLACE -->",
@@ -28,9 +31,12 @@ const main = async () => {
 
     const mdContents = await fs.promises.readFile(LIST_FOLDER, { encoding: 'utf8' })
     console.log(`successfully read ${path.relative(process.cwd(), LIST_FOLDER)} (${utils.blobSize(mdContents)} bytes)`)
-    
+
+
+    console.log("reading emoji contents")
+    const emojis = await customIcons()
     console.log("processing html contents")
-    const processedContent = mdProcessor(mdContents)
+    const processedContent = mdProcessor(mdContents, emojis)
     const processedHtml = processedContent.output
     console.log(`successfully converted list to HTML (${utils.blobSize(processedHtml)} bytes)`)
     
@@ -38,13 +44,15 @@ const main = async () => {
     const templateHtml = await fs.promises.readFile(HTML_TEMPLATE, { encoding: 'utf8' })
     console.log("injecting generated content")
     let htmlOutput = templateHtml.replace(HTML_REPLACE_TAGS.MD_REPLACE, processedHtml)
+
     console.log("injecting sidebar anchors")
     htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.MD_ANCHORS, processedContent.anchors.map(anchorInfo => {
         return `<a href="#${anchorInfo.slug}" class="toc-content ${anchorInfo.tag}">${anchorInfo.title}</a>`
     }).join(""))
-    console.log("injecting OTHER anchors")
+    console.log("injecting other anchors")
     htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.MD_ANCHORS_FIRST, "#" + processedContent.anchors[0].slug)
 
+    console.log("saving changes")
     const outputHtmlFile = path.join(DIST_FOLDER, "./index.html")
     await fs.promises.writeFile(outputHtmlFile, htmlOutput)
     console.log(`wrote output HTML file to ${outputHtmlFile}`)
@@ -52,6 +60,11 @@ const main = async () => {
     const outputStylesPath = path.join(process.cwd(), "./dist/style.css")
     console.log(`copying stylesheet to ${path.relative(process.cwd(), outputStylesPath)}`)
     await fs.promises.copyFile(CSS_FILE, outputStylesPath)
+    console.log(`copied stylesheet`)
+
+    const outputIconsPath = path.join(process.cwd(), "./dist/icons")
+    console.log(`copying icons to ${path.relative(process.cwd(), outputIconsPath)}`)
+    await fs.promises.cp(ICONS_FOLDER, outputIconsPath, {recursive: true})
     console.log(`copied stylesheet`)
 }
 
@@ -66,7 +79,7 @@ const ensureDistFolder = async () => {
     }
 }
 
-const mdProcessor = (content) => {
+const mdProcessor = (content, emojis) => {
     let anchors = []
     const md = markdownIt()
         .use(mdAnchor, {
@@ -78,16 +91,9 @@ const mdProcessor = (content) => {
                     title: info.title,
                     tag: token.tag
                 })
-
-                // const node = document.createElement("a");
-                // node.setAttribute("href", `#${info.slug}`)
-                // node.classList.add("toc-content", token.tag)
-                // node.appendChild(document.createTextNode(info.title));
-                // node.onclick = closeDrawerIfMobile
-                // document.getElementById("toc")?.appendChild(node)
             }
         })
-        .use(mdEmojis.full, /*{defs: customIcons}*/)
+        .use(mdEmojis.full, {defs: emojis})
         .use(mdSmall)
 
     // add open in new tab functionality
