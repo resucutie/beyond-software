@@ -11,7 +11,7 @@ const customIcons = require("./custom-icons.js")
 const args = process.argv.slice(2)
 
 const DIST_FOLDER = path.join(process.cwd(), "dist")
-const LIST_FOLDER = path.resolve(args[0] || "./assets/index.md")
+const LIST_FOLDER = path.resolve(args[0] || "./docs/index.md")
 const HTML_TEMPLATE = path.join(process.cwd(), "./src/index.html")
 const CSS_FILE = path.join(process.cwd(), "./src/style.css")
 const ICONS_FOLDER = path.join(process.cwd(), "./assets/icons")
