@@ -1,5 +1,5 @@
 const fs = require("fs")
-const path = require("path")
+const nodepath = require("path")
 
 const phone = "./assets/emojis/phone.svg"
 const android = "./assets/emojis/android.svg"
@@ -21,7 +21,7 @@ const ads = "./assets/emojis/ads.svg"
 const resource = "./assets/emojis/resource.svg"
 
 async function emojify(path, alt) {
-    const contents = await fs.promises.readFile(path, { encoding: 'utf8' })
+    const contents = await fs.promises.readFile(nodepath.join(process.cwd(), path), { encoding: 'utf8' })
     return `<span class="custom-emoji" ${alt ? `title="${alt}"` : ""}>${contents}</span>`
 }
 
