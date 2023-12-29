@@ -1,12 +1,18 @@
 {
-  "name": "Beyond Software",
+  "name": "beyond-software-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node preprocessor.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-emoji": "^3.0.0",
+    "markdown-it-small": "^1.0.0"
+  }
 }
