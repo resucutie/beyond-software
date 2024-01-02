@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Entry request
+    url: https://github.com/abUwUser/beyond-software-list/issues/new/choose
+    about: Request an entry to be added
