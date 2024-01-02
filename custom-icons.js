@@ -19,6 +19,7 @@ const freemium = "./assets/emojis/freemiun.svg"
 const paid = "./assets/emojis/paid.svg"
 const ads = "./assets/emojis/ads.svg"
 const resource = "./assets/emojis/resource.svg"
+const vr = "./assets/emojis/vr.svg"
 
 async function emojify(path, alt) {
     const contents = await fs.promises.readFile(nodepath.join(process.cwd(), path), { encoding: 'utf8' })
@@ -40,6 +41,7 @@ module.exports = async () => {
         "c-firefox": await emojify(firefox, "Avaiable on Firefox"),
         "c-appletv": await emojify(appletv, "Avaiable on Apple TV"),
         "c-console": await emojify(console, "Avaiable on a console"),
+        "c-vr": await emojify(vr, "Avaiable on VR consoles"),
         "c-proprietary": await emojify(proprietary, "Is a proprietary application"),
         "c-ads": await emojify(ads, "Contains ads"),
         "c-freemium": await emojify(freemium, "Contains paywalled features"),
