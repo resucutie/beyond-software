@@ -65,12 +65,15 @@ code {
     border: 1px solid var(--accent);
 }
 
-h6#no-margin-changes{
+h6[id*="no-margin-changes"], h6[id*="no-paragraph"]{
     display: none;
 }
-ul:not(h6#no-margin-changes + ul):not(li > ul){
+ul:not(h6[id*="no-margin-changes"] + ul):not(li > ul){
     margin-top: -1em;
     margin-bottom: 0;
+}
+h6[id*="no-paragraph"] + p{
+    margin-top: 0;
 }
 
 /* blockquote {
