@@ -57,7 +57,7 @@ const main = async () => {
     console.log("injecting commit hash info")
     const websiteCommit = await utils.getCommitHash(process.cwd()).catch(() => undefined)
     const listCommit = await utils.getCommitHash(path.dirname(LIST_FOLDER)).catch(() => undefined)
-    htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.COMMIT_INFO, `Website running commit ${websiteCommit.slice(0, 6)} using list from commit ${listCommit.slice(0, 6)}`)
+    htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.COMMIT_INFO, `Website running commit ${websiteCommit.slice(0, 7)} using list from commit ${listCommit.slice(0, 7)}`)
 
     console.log("saving changes")
     const outputHtmlFile = path.join(DIST_FOLDER, "./index.html")
