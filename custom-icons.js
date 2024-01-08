@@ -14,6 +14,7 @@ const chrome = "./assets/emojis/chrome.svg"
 const firefox = "./assets/emojis/firefox.svg"
 const appletv = "./assets/emojis/appletv.svg"
 const console = "./assets/emojis/console.svg"
+const selfhost = "./assets/emojis/selfhost.svg"
 const proprietary = "./assets/emojis/proprietary.svg"
 const freemium = "./assets/emojis/freemiun.svg"
 const paid = "./assets/emojis/paid.svg"
@@ -42,6 +43,7 @@ module.exports = async () => {
         "c-appletv": await emojify(appletv, "Avaiable on Apple TV"),
         "c-console": await emojify(console, "Avaiable on a console"),
         "c-vr": await emojify(vr, "Avaiable on VR consoles"),
+        "c-selfhost": await emojify(selfhost, "The service is selfhostable"),
         "c-proprietary": await emojify(proprietary, "Is a proprietary application"),
         "c-ads": await emojify(ads, "Contains ads"),
         "c-freemium": await emojify(freemium, "Contains paywalled features"),
