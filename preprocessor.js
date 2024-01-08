@@ -1,6 +1,7 @@
 const fs = require("fs")
 const process = require("process")
 const path = require("path")
+const cp = require("child_process")
 const markdownIt = require("markdown-it")
 const mdAnchor = require("markdown-it-anchor")
 const mdEmojis = require("markdown-it-emoji")
@@ -19,9 +20,11 @@ const HTML_REPLACE_TAGS = {
     MD_REPLACE: "<!-- PREPROCESSOR-MD-DISPLAY-REPLACE -->",
     MD_ANCHORS: "<!-- PREPROCESSOR-MD-ANCHORS-REPLACE -->",
     MD_ANCHORS_FIRST: "<!-- PREPROCESSOR-MD-ANCHORS-FIRST-REPLACE -->",
+    COMMIT_INFO: "<!-- PREPROCESSOR-COMMIT-INFO-REPLACE -->",
 }
 
 const main = async () => {
+
     console.log({
         DIST_FOLDER,
         LIST_FOLDER
@@ -51,6 +54,10 @@ const main = async () => {
     }).join(""))
     console.log("injecting other anchors")
     htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.MD_ANCHORS_FIRST, "#" + processedContent.anchors[0].slug)
+    console.log("injecting commit hash info")
+    const websiteCommit = await utils.getCommitHash(process.cwd()).catch(() => undefined)
+    const listCommit = await utils.getCommitHash(path.dirname(LIST_FOLDER)).catch(() => undefined)
+    htmlOutput = htmlOutput.replace(HTML_REPLACE_TAGS.COMMIT_INFO, `Website running commit ${websiteCommit.slice(0, 6)} using list from commit ${listCommit.slice(0, 6)}`)
 
     console.log("saving changes")
     const outputHtmlFile = path.join(DIST_FOLDER, "./index.html")
@@ -113,7 +120,16 @@ const mdProcessor = (content, emojis) => {
 }
 
 const utils = {
-    blobSize: str => new Blob([str]).size
+    blobSize: str => new Blob([str]).size,
+    getCommitHash: (path) => {
+        return new Promise((resolve, reject) => {
+            cp.exec('git rev-parse HEAD', {cwd: path}, (err, stdout) => {
+                if(err) return reject(err)
+                resolve(stdout)
+            }); 
+        })
+      }
+      
 }
 
 main()

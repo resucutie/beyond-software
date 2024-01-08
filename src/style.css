@@ -232,6 +232,11 @@ blockquote > p {
     gap: 8px;
 }
 
+.greetings-commit-info{
+    color: #fff6;
+    font-size: 12px;
+}
+
 .greetings-scroll {
     position: absolute;
     bottom: 16px;
