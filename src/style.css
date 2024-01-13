@@ -31,9 +31,9 @@ body {
 h1, h2{
     margin: 16px 0;
 }
-h3, h4, h5, h6 {
+/* h3, h4, h5, h6 {
     margin: 0;
-}
+} */
 small {
     font-style: italic;
 }
