@@ -191,6 +191,9 @@ blockquote > p {
     height: 20px;
     fill: currentColor;
 }
+.custom-emoji.unrestricted svg {
+    width: unset;
+}
 
 #greetings {
     width: 100%;

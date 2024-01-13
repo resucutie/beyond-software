@@ -24,14 +24,14 @@ const ads = "./assets/emojis/ads.svg"
 const resource = "./assets/emojis/resource.svg"
 const vr = "./assets/emojis/vr.svg"
 
-async function emojify(path, alt) {
+async function emojify(path, alt, anysize) {
     const contents = await fs.promises.readFile(nodepath.join(process.cwd(), path), { encoding: 'utf8' })
-    return `<span class="custom-emoji" ${alt ? `title="${alt}"` : ""}>${contents}</span>`
+    return `<span class="custom-emoji${anysize ? " unrestricted" : ""}" ${alt ? `title="${alt}"` : ""}>${contents}</span>`
 }
 
 module.exports = async () => {
     return {
-        "c-mobile": await emojify(phone, "Avaiable on all mobile platforms"),
+        "c-mobile": await emojify(phone, "Avaiable on all mobile platforms", true),
         "c-android": await emojify(android, "Avaiable on Android"),
         "c-ios": await emojify(ios, "Avaiable on iPhone"),
         "c-pc": await emojify(computer, "Avaiable on all desktop platforms"),
@@ -43,8 +43,8 @@ module.exports = async () => {
         "c-chrome": await emojify(chrome, "Avaiable on Chrome"),
         "c-firefox": await emojify(firefox, "Avaiable on Firefox"),
         "c-tvbox": await emojify(tvbox, "Avaiable on most smart TV box platforms"),
-        "c-roku": await emojify(roku, "Avaiable on Roku"),
-        "c-tvos": await emojify(tvos, "Avaiable on Apple TV"),
+        "c-roku": await emojify(roku, "Avaiable on Roku", true),
+        "c-tvos": await emojify(tvos, "Avaiable on Apple TV", true),
         "c-console": await emojify(console, "Avaiable on a console"),
         "c-vr": await emojify(vr, "Avaiable on VR consoles"),
         "c-selfhost": await emojify(selfhost, "The service is selfhostable"),
