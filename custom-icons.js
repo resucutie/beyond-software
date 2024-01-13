@@ -12,7 +12,9 @@ const terminal = "./assets/emojis/terminal.svg"
 const web = "./assets/emojis/web.svg"
 const chrome = "./assets/emojis/chrome.svg"
 const firefox = "./assets/emojis/firefox.svg"
-const appletv = "./assets/emojis/appletv.svg"
+const tvbox = "./assets/emojis/tvbox.svg"
+const roku = "./assets/emojis/roku.svg"
+const tvos = "./assets/emojis/tvos.svg"
 const console = "./assets/emojis/console.svg"
 const selfhost = "./assets/emojis/selfhost.svg"
 const proprietary = "./assets/emojis/proprietary.svg"
@@ -40,7 +42,9 @@ module.exports = async () => {
         "c-web": await emojify(web, "Avaiable on all browsers"),
         "c-chrome": await emojify(chrome, "Avaiable on Chrome"),
         "c-firefox": await emojify(firefox, "Avaiable on Firefox"),
-        "c-appletv": await emojify(appletv, "Avaiable on Apple TV"),
+        "c-tvbox": await emojify(tvbox, "Avaiable on most smart TV box platforms"),
+        "c-roku": await emojify(roku, "Avaiable on Roku"),
+        "c-tvos": await emojify(tvos, "Avaiable on Apple TV"),
         "c-console": await emojify(console, "Avaiable on a console"),
         "c-vr": await emojify(vr, "Avaiable on VR consoles"),
         "c-selfhost": await emojify(selfhost, "The service is selfhostable"),
