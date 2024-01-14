@@ -10,6 +10,7 @@ const apple = "./assets/emojis/apple.svg"
 const linux = "./assets/emojis/linux.svg"
 const terminal = "./assets/emojis/terminal.svg"
 const web = "./assets/emojis/web.svg"
+const extension = "./assets/emojis/extension.svg"
 const chrome = "./assets/emojis/chrome.svg"
 const firefox = "./assets/emojis/firefox.svg"
 const tvbox = "./assets/emojis/tvbox.svg"
@@ -40,6 +41,7 @@ module.exports = async () => {
         "c-linux": await emojify(linux, "Avaiable on Linux"),
         "c-cli": await emojify(terminal, "Is a command line only application"),
         "c-web": await emojify(web, "Avaiable on all browsers"),
+        "c-extension": await emojify(extension, "Is avaiable as a browser extension"),
         "c-chrome": await emojify(chrome, "Avaiable on Chrome"),
         "c-firefox": await emojify(firefox, "Avaiable on Firefox"),
         "c-tvbox": await emojify(tvbox, "Avaiable on most smart TV box platforms"),
