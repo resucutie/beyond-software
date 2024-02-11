@@ -47,7 +47,7 @@ jobs:
       - name: Clone list repo
         run: |
           git config --global url.https://github.com/.insteadOf git://github.com/
-          git clone https://github.com/abUwUser/beyond-software-list ./docs
+          git clone https://github.com/resucutie/beyond-software-list ./docs
       - name: Build
         run: pnpm run build ./docs/index.md
       # setup pages
